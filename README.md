@@ -38,10 +38,4 @@ Input Output
 940   Case #2: 852 88
 4444  Case #3: 667 3777
 
-  
-
-
-
-
-  
 In Sample Case #1, notice that A and B can be the same. The only other possible answers are 1 3 and 3 1.
