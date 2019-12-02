@@ -4,9 +4,21 @@ fn main() {
     println!("Insert value");
    let val: u32 = integer_input();
    println!("value input {}", val);
-   println!("value {}", u32::max_value());
-   for i in 1..val + 1 {
-       println!("value {}", i);
+   for i in 1..val - 1 {
+       if i % 2 != 0 {
+          continue;
+       }
+       let val_1: String = i.to_string();
+       let val_2: u32 = val - i;
+       let val_2 = val_2.to_string();
+       if val_1.contains("4") || val_2.contains("4") {
+         continue;
+       }
+       let last_val: u32 = i + (val - i);
+       if last_val == val {
+         println!("{}, {}", i, val - i); 
+         break;  
+       }
    }
 }
 fn integer_input() -> u32 {
