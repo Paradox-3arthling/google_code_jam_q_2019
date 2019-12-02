@@ -1,0 +1,9 @@
+[package]
+name = "google_code_jam_q_2019"
+version = "0.1.0"
+authors = ["savage_floweed <FloydQaranja@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
