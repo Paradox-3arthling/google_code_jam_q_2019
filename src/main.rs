@@ -6,9 +6,6 @@ fn main() {
    for x in 0..tries {
     let val: u32 = integer_input();
     for i in 1..val - 1 {
-        if i % 2 != 0 {
-            continue;
-        }
         let val_1: String = i.to_string();
         let val_2: u32 = val - i;
         let val_2 = val_2.to_string();
@@ -30,17 +27,4 @@ fn integer_input() -> u32 {
     let val: u32 = val.trim().parse()
         .expect("Expected integer!");
     val
-}
-
-#[allow(dead_code)]
-fn add(a: i32, b: i32) -> i32 {
-	a + b
-}
-#[cfg(test)]
-mod tests {
-	use super::*;
-	#[test]
-	fn test_add() {
-		assert_eq!(add(2, 3), 5);
-	}
 }
